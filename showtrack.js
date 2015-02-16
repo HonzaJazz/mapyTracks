@@ -1,6 +1,6 @@
 ﻿function mapInit(elementName){
 	var center = SMap.Coords.fromWGS84(14.41790, 50.12655);
-	var m = new SMap(JAK.gel(elementName), center, 13);
+	var m = new SMap(JAK.gel(elementName), center, 5);
 
 	m.addDefaultLayer(SMap.DEF_OPHOTO);
 	m.addDefaultLayer(SMap.DEF_TURIST_WINTER);
