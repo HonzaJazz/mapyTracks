@@ -37,6 +37,9 @@ function showGPXDoc(url){
 		}
 	}
 	xmlhttp.open("GET",url,true);
+	if (xmlhttp.overrideMimeType){
+		xmlhttp.overrideMimeType('text/xml');
+	}
 	xmlhttp.send();
 }
 
